@@ -1,7 +1,7 @@
 /* Profile image */
 #img_profile {
-    width:50px; 
-    height:50px; 
+    width:60px; 
+    height:60px; 
     border-radius: 25px; 
     right: -15px;
     top: -15px;
@@ -11,4 +11,13 @@
                 var(--item-shadow-size) var(--bg-bottom-shadow), 
                 calc(var(--item-shadow-dist) * -1) calc(var(--item-shadow-dist) * -1)
                 var(--item-shadow-size) var(--bg-top-shadow);
+}
+
+span.profile_btn_txt {
+    display: none;
+}
+
+div.divLinks .links_span_linkSection {
+    white-space: nowrap;
+    display: block;
 }

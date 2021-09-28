@@ -41,7 +41,7 @@ nav li {
     padding: 8px 4px;
     flex-grow: 1;
     margin: 0 8px 0 8px;
-    text-align: center;
+    justify-content: center;
     font-size: 0.8em;
 }
 nav ul :first-child {

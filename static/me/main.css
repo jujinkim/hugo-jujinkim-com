@@ -46,6 +46,8 @@ nav ul {
 }
 
 nav li {
+    display: flex;
+    align-items:center;
     border-radius: 24px;
     cursor: pointer;
     overflow: hidden;
@@ -56,6 +58,15 @@ nav li {
                 inset 
                 calc(var(--item-shadow-dist) * -1) calc(var(--item-shadow-dist) * -1)
                 var(--item-shadow-size) var(--bg-top-shadow);
+}
+
+img.profile_btn_img {
+    width: 16px;
+    height: 16px;
+}
+
+span.profile_btn_txt {
+    margin-left: 4px;
 }
 
 /* sections */
@@ -105,7 +116,11 @@ section hr {
     background: var(--font-color);
 }
 
-/* Profile image */
+section h1.section_title img {
+    vertical-align: middle;
+}
+
+/* Profile */
 #img_profile {
     width:140px; 
     height:140px; 
@@ -119,14 +134,39 @@ section hr {
                 var(--item-shadow-size) var(--bg-top-shadow);
 }
 
+
+
 /* Links */
 div.divLinks img {
     width: 24px;
     height: 24px;
+    vertical-align: middle;
 }
 .light div.divLinks img.white,
 .dark div.divLinks img.black,
 .rosegold div.divLinks img.black
 {
     display: none;
+}
+
+.divLinks {
+    line-height:2em;
+}
+.divLinks a {
+    text-decoration: none;
+    color:black;
+}
+.divLinks a:hover {
+    color:dimgray;
+    text-decoration: underline;
+}
+
+div.divLinks .links_section_jujin {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+div.divLinks .links_span_linkSection {
+    white-space: nowrap;
+    display: inline-block;
 }
