@@ -270,6 +270,6 @@ class Chef(val market: IMarket) {
 - Why we use this?: Let's think that Di will gives an industrial revolution to your code.
 
 &nbsp;In the process of the industrial revolution, there is "high-volume, low-variety production". It is neccessary to distribute works by each persons well. If somebody tries to do all things, it would be ruined. We have progressed the developed society after industrial revolution through the exmaple code above.  
-&nbsp;I know it is not easy to do these all things. To make this architecture, we have to make all the DI boilerplate codes. That's why we use frameworks like Dagger2. There are already implemented codes something like IMarket in Dagger2. We'll check out Dagger2 in the next post.
+&nbsp;I know it is not easy to do these all things. To make this architecture, we have to make all the DI boilerplate codes. That's why we use frameworks like Dagger2. There are already implemented codes something like IMarket in Dagger2.
 
 &nbsp;In this post, I wrote the DI that I understood in my own way. I hope may you will get a good feeling about DI after reading this post. DI is certainly a unfamiliar design for the person who faces this first time, but it will gives you a new inspiration in your codes.
