@@ -8,17 +8,17 @@
 }
 
 :root .light {
-    --bg: #e6e6e6;
-    --bg-top-shadow: #f4f4f4;
-    --bg-bottom-shadow: #dadada;
-    --font-color: #3b3b3b;
+    --bg: #e9e9e9;
+    --bg-top-shadow: #f8f8f8;
+    --bg-bottom-shadow: #dcdcdc;
+    --font-color: #2b2b2b;
 }
 
 :root .dark {
-    --bg: #3b3b3b;
-    --bg-top-shadow: #4a4a4a;
-    --bg-bottom-shadow: #313131;
-    --font-color: #e6e6e6;
+    --bg: #2b2b2b;
+    --bg-top-shadow: #3a3a3a;
+    --bg-bottom-shadow: #212121;
+    --font-color: #e9e9e9;
 }
 
 :root .rosegold {
