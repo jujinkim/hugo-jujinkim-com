@@ -20,9 +20,9 @@ If you have turned off "Allow cross-platform matching" in the Game setting, turn
 ## The game client is shutting down suddenly while playing game
 ---
 This problem is occured while playing the game, within 3 minutes after I entered the game. Not happened in the lobby or loading screen.  
-I'd faced this issue after overclock RAMs. So I'd thought that there was something wrong between overclocked RAM and BF2042, after make them back to normal and this issue has gone.
+I'd faced this issue after overclock RAMs. So I'd thought that there was something wrong between overclocked RAM and BF2042. After make them back to normal, this issue has gone.
 ```
-If your PC's RAMs are overclocked, make them back to normal.
+If your RAMs are overclocked, make them back to normal.
 ```
 
 &nbsp;
