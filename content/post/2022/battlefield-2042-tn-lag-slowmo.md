@@ -28,7 +28,7 @@ If your RAMs are overclocked, make them back to normal.
 &nbsp;
 ## My character's movement looks like slow-mo
 ---
-In this situation, you may feel like there are lags in the game, but something different between other games' lags. It likes every other people are playing normally, but only my character moves extremely slow. like the slow-motion effect is applied to only my character. And, this happens only in the battle field. 
+In this situation, you may feel like there are lags in the game, but something different between other games' lags. It's like every other people are playing normally, but only my character moves extremely slow. like the slow-motion effect is applied to only my character. And, this happens only in the battle field. 
 
 If you are having in trouble with this issue, you need to check the network status. There are some options to display the network status widget in the BF game setting. `(Options > General > Network)`  
 Turn the setting "`Show network performance bar`" on. After this, go into the game again, and you may notice that there is a long bar at the top of the screen. Find `TN` and read the value. `TN` means `Time Nudge`.  
