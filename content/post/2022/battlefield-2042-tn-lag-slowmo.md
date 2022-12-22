@@ -33,7 +33,7 @@ In this situation, you may feel like there are lags in the game, but something d
 If you are having in trouble with this issue, you need to check the network status. There are some options to display the network status widget in the BF game setting. `(Options > General > Network)`  
 Turn the setting "`Show network performance bar`" on. After this, go into the game again, and you may notice that there is a long bar at the top of the screen. Find `TN` and read the value. `TN` means `Time Nudge`.  
 
- If `TN` value is too high (>100ms, sometimes >1k), you need to adjust your PC settings. 
+ If `TN` value is too high (>100ms, sometimes >1k), I recommend you to adjust some of your PC settings.
 
 ```
 Make QoS reservable bandwidth unlimited
@@ -57,7 +57,7 @@ Turn the setting "Delivery optimization" off (Windows 10)
 ```
 Optimize PC using optimizing apps
 ```
-> I just asked my friend who develops PC game server(not BF), and he replied immediately that most of this case were because of unmatched TCP packet receiving size between server/client and wrong bandwidth setting from the client side. He said that basically these settings should be adjusted in the game client but it seems that it doesn't so I have to modify my PC settings. And he told me how to fix this trouble. After modifying some settings in my pc, and wow, it worked. Now I understood why people looks for the expert.
+> Above setting cannot fix this problem perfectly, but may help to make network performance improved.
 
 &nbsp;
 ## Everything is perfect but I cannot shoot enemies
