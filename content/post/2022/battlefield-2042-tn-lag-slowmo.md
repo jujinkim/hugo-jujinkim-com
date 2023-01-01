@@ -33,10 +33,19 @@ In this situation, you may feel like there are lags in the game, but something d
 If you are having in trouble with this issue, you need to check the network status. There are some options to display the network status widget in the BF game setting. `(Options > General > Network)`  
 Turn the setting "`Show network performance bar`" on. After this, go into the game again, and you may notice that there is a long bar at the top of the screen. Find `TN` and read the value. `TN` means `Time Nudge`.  
 
- If `TN` value is too high (>100ms, sometimes >1k), I recommend you to adjust some of your PC settings.
+ If `TN` value is too high (>100ms, sometimes >1k), I recommend you to adjust some of your PC settings. You don't have to do these all. Try these one by one until the problem is fixed.
+```
+Update your BIOS, and disable TPM
 
+I don't know the reason, but the "TPM" makes BF2042 performance shit.
+Just turning off TPM setting in BIOS setting, it would decrease BF2042 lag.
+If you cannot find TPM disable in BIOS setting, you should update the BIOS from the manufactor's website.
+
+My PC's CPU is Ryzen 1700x, and this method helps the game run perfectly.
+```
 ```
 Make QoS reservable bandwidth unlimited
+
 1. Run 'gpedit.msc'. (Win+R > Type 'gpedit.msc' > Enter)
 2. Navigate below:
   Computer Configuration
@@ -50,14 +59,37 @@ Make QoS reservable bandwidth unlimited
 
 ```
 Turn the setting "Delivery optimization" off (Windows 10)
+
 1. Enter the control panel.
 2. Navigate 'Update & Security > Delivery Optimization'
 3. Turn it off.
 ```
 ```
+Set the core's count and thread's count for BF2042
+
+1. Go to the directory where BF2042 is installed.
+2. Create 'user.cfg' file.
+3. Add below:
+
+Thread.ProcessorCount [CPU core count]
+Thread.MaxProcessorCount [CPU thread(processor) count - 2]
+Thread.MinFreeProcessorCount 0
+Thread.JobThreadPriority 0
+GstRender.Thread.MaxProcessorCount [CPU thread(processor) count]
+
+e.g) 8 Core with HT(16 threads)
+Thread.ProcessorCount 8
+Thread.MaxProcessorCount 14
+Thread.MinFreeProcessorCount 0
+Thread.JobThreadPriority 0
+GstRender.Thread.MaxProcessorCount 16
+
+4. Save user.cfg and run BF2042.
+```
+```
 Optimize PC using optimizing apps
 ```
-> Above setting cannot fix this problem perfectly, but may help to make network performance improved.
+> Above setting cannot fix this problem perfectly, but some may help to make network performance improved.
 
 &nbsp;
 ## Everything is perfect but I cannot shoot enemies
