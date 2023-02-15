@@ -1,6 +1,6 @@
 function initialize() {
     loadSlot(document.getElementById('jujin'));
-    loadSlot(document.getElementById('bio'));
+    //loadSlot(document.getElementById('bio'));
     loadSlot(document.getElementById('career'));
     loadSlot(document.getElementById('project'));
     loadSlot(document.getElementById('exp'));
@@ -16,9 +16,9 @@ function loadSlot(elem) {
         case 'jujin' :
             xhttp.open('GET', 'pages/jujin.html', true);
         break;
-        case 'bio' :
-            xhttp.open('GET', 'pages/bio.html', true);
-        break;
+        // case 'bio' :
+        //     xhttp.open('GET', 'pages/bio.html', true);
+        // break;
         case 'career' :
             xhttp.open('GET', 'pages/career.html', true);
         break;
