@@ -17,7 +17,6 @@ body {
     color: var(--font-color);
 }
 
-
 a {
     color: var(--font-color) !important;
 }
@@ -122,8 +121,8 @@ section h1.section_title img {
 
 /* Profile */
 #img_profile {
-    width:140px; 
-    height:140px; 
+    width:160px; 
+    height:160px; 
     border-radius: 24px; 
     right: 0;
     position: absolute;
@@ -133,8 +132,6 @@ section h1.section_title img {
                 calc(var(--item-shadow-dist) * -1) calc(var(--item-shadow-dist) * -1)
                 var(--item-shadow-size) var(--bg-top-shadow);
 }
-
-
 
 /* Links */
 div.divLinks img {
