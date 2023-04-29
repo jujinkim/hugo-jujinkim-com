@@ -44,6 +44,12 @@ If you cannot find TPM disable in BIOS setting, you should update the BIOS from 
 My PC's CPU is Ryzen 1700x, and this method helps the game run perfectly.
 ```
 ```
+Make sure that every parts of your PC work properly.
+
+For example, If your PC has 8GBx2 RAMs, check your system recognizes 16GB RAM.
+If one RAM is not working, your system only has 8GB RAM, and 8GB is not enough to run BF2042.
+```
+```
 Make QoS reservable bandwidth unlimited
 
 1. Run 'gpedit.msc'. (Win+R > Type 'gpedit.msc' > Enter)
