@@ -1,11 +1,86 @@
 baseURL = "https://jujinkim.com"
-title = "JujinKim's Blog"
-DefaultContentLanguage = "en"
-theme = "hugo-PaperMod"
+title = "Jujin Kim's"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
 hasCJKLanguage = true
-copyright = "Jujin Kim (Dangumju)"
+copyright = "Jujin Kim"
 googleAnalytics = "UA-54002449-3"
 enableRobotsTXT = true
+enableEmoji = true
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "Jujin Kim"
+  info = "A drunken developer with a free spirit"
+  description = "Jujin's personal website"
+  keywords = "blog,developer,personal"
+  #avatarurl = "images/avatar.jpg"
+  gravatar = "jujin@jujinkim.com"
+
+  faviconSVG = "/img/favicon.svg"
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+
+  since = 1992
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  # customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+[[params.social]]
+    name = "About"
+    icon = "fa fa-user fa-2x"
+    weight = 1
+    url = "../me"
+[[params.social]]
+    name = "Devlog"
+    icon = "fa fa-code fa-2x"
+    weight = 2
+    url = "https://jujin.dev"
+[[params.social]]
+    name = "Github"
+    icon = "fa fa-github fa-2x"
+    weight = 3
+    url = "https://github.com/jujinkim/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fa fa-linkedin fa-2x"
+    weight = 4
+    url = "https://www.linkedin.com/in/jujinkim/"
+[[params.social]]
+    name = "Instagram"
+    icon = "fa fa-instagram fa-2x"
+    weight = 5
+    url = "https://www.instagram.com/jujin__kim/"
+[[params.social]]
+    name = "Facebook"
+    icon = "fa fa-facebook fa-2x"
+    weight = 6
+    url = "https://www.facebook.com/jujinjujinjujin"
+[[params.social]]
+    name = "Gravatar"
+    icon = "fa fa-paypal fa-2x"
+    weight = 7
+    url = "https://paypal.me/dangumju"
+[[params.social]]
+    name = "Email"
+    icon = "fa fa-envelope fa-2x"
+    weight = 8
+    url = "mailto:jujin@jujinkim.com"
 
 [menu]
     [[menu.main]]
@@ -18,43 +93,9 @@ enableRobotsTXT = true
         name = "About me"
         url = "../me"
         weight = 2
-    [[menu.main]]
-        identifier = "archives"
-        name = "Archives"
-        url = "/archives/"
-        weight = 3
 
-[languages]
-    [languages.en]
-        title = "Jujin Kim's blog"
-        languageName = "English"
-        weight = 1
-
-[params]
-    env = "production"
-    title = "JujinKim's Blog"
-    description = "JujinKim's engineering blog"
-    autor = "Jujin Kim"
-    defaultTheme = "auto"
-    layout = "archives"
-    ShowShareButtons = true
-    ShowReadingTime = true
-    ShowToc = true
-    TocOpen = true
-    comments = true
-    [params.homeInfoParams]
-        Title = "Hi there"
-        Content = "Thanks for visiting my blog. Have a nice day :)"
-    [params.navigation]
-        help = "Help"
-        
-[minify]
-    disableXML = true
-    minifyOutput = true
-
-[outputs]
-    home = ["HTML", "RSS"]
-
-[sitemap]
-    changefreq = "weekly"
-    filename = "sitemap.xml"
+[params.utterances]
+  repo = "jujinkim/web-jujinkim.com-comment" # https://utteranc.es/#heading-repository
+  issueTerm = "pathname" # https://utteranc.es/#heading-mapping
+  label = "comment" # https://utteranc.es/#heading-issue-label
+  theme = "preferred-color-scheme" # https://utteranc.es/#heading-theme
