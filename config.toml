@@ -67,14 +67,9 @@ style = "github-dark"
     weight = 5
     url = "https://www.instagram.com/jujin__kim/"
 [[params.social]]
-    name = "Facebook"
-    icon = "fa fa-facebook fa-2x"
-    weight = 6
-    url = "https://www.facebook.com/jujinjujinjujin"
-[[params.social]]
     name = "Email"
     icon = "fa fa-envelope fa-2x"
-    weight = 7
+    weight = 6
     url = "mailto:jujin@jujinkim.com"
 
 [menu]
