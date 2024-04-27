@@ -1,6 +1,6 @@
 ---
 title: "Recharge of disposable batteries, energyoid"
-date: 2024-04-28T02:26:52+09:00
+date: 2024-04-28T02:27:46+09:00
 draft: false
 ---
 
