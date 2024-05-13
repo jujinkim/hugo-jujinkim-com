@@ -1,91 +1,126 @@
-baseURL = "https://jujinkim.com"
+baseURL = "https://jujinkim.com/"
 title = "Jujin Kim's"
-theme = "hugo-coder"
-languagecode = "en"
-defaultcontentlanguage = "en"
-hasCJKLanguage = true
-copyright = "Jujin Kim"
-googleAnalytics = "G-HMN7B5TG1B"
+paginate = 5
+theme = "hugo-PaperMod"
 enableRobotsTXT = true
-enableEmoji = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+pygmentsUseClasses = true
 
-[markup.highlight]
-style = "github-dark"
+[minify]
+    disableXML = true
+    minifyOutput = true
 
 [params]
-  author = "Jujin Kim"
-  info = "Software developer"
-  description = "Jujin's personal website"
-  keywords = "blog,developer,personal"
-  #avatarurl = "images/avatar.jpg"
-  gravatar = "jujin@jujinkim.com"
+    env = "production"
+    title = "Jujin Kim's"
+    description = "Jujin's personal website"
+    keywords = [ "Blog", "Jujin", "Programming", "Develop" ]
+    author = "Jujin Kim"
+    images = [ "<link or path of image for opengraph, twitter-cards>" ]
+    DateFormat = "January 2, 2006"
+    defaultTheme = "auto"
+    disableThemeToggle = false
+    ShowReadingTime = true
+    ShowShareButtons = true
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    ShowWordCount = true
+    ShowRssButtonInSectionTermList = true
+    UseHugoToc = true
+    disableSpecial1stPost = false
+    disableScrollToTop = false
+    comments = true
+    hidemeta = false
+    hideSummary = false
+    showtoc = false
+    tocopen = false
 
-  faviconSVG = "/img/favicon.svg"
-  favicon_32 = "/img/favicon-32x32.png"
-  favicon_16 = "/img/favicon-16x16.png"
+[params.assets]
+  favicon = "/img/favicon.svg"
+  favicon16x16 = "/img/favicon-16x16.png"
+  favicon32x32 = "/img/favicon-32x32.png"
+  apple_touch_icon = "/img/favicon.svg"
+  safari_pinned_tab = "/img/favicon.svg"
 
-  since = 1992
+[params.label]
+  text = "Home"
+  icon = "/apple-touch-icon.png"
+  iconHeight = 35
 
-  enableTwemoji = true
+[params.profileMode]
+  enabled = true
+  title = "Jujin Kim's"
+  subtitle = "Software developer"
+  imageUrl = "https://www.gravatar.com/avatar/e6c8e03b582618d7991167c68b0f0926?s=240&d=mp"
+  imageWidth = 240
+  imageHeight = 240
+  imageTitle = "my image"
+    [[params.profileMode.buttons]]
+        name = "Me"
+        url = "me"
+    [[params.profileMode.buttons]]
+        name = "Posts"
+        url = "post"
+    [[params.profileMode.buttons]]
+        name = "Tags"
+        url = "tags"
 
-  colorScheme = "auto"
-  hidecolorschemetoggle = false
-
-  # customCSS = ["css/custom.css"]
-  # customSCSS = ["scss/custom.scss"]
-  # customJS = ["js/custom.js"]
-
-[taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
-  author = "authors"
-
-[[params.social]]
-    name = "About"
-    icon = "fa fa-user fa-2x"
-    weight = 1
-    url = "../me"
-[[params.social]]
+[params.homeInfoParams]
+Title = "Hi there 👋"
+Content = "Welcome to my blog"
+  [[params.socialIcons]]
     name = "Devlog"
-    icon = "fa fa-code fa-2x"
-    weight = 2
     url = "https://jujin.dev"
-[[params.social]]
+  [[params.socialIcons]]
     name = "Github"
-    icon = "fa fa-github fa-2x"
-    weight = 3
-    url = "https://github.com/jujinkim/"
-[[params.social]]
+    url = "https://github.com/jujinkim"
+  [[params.socialIcons]]
     name = "LinkedIn"
-    icon = "fa fa-linkedin fa-2x"
-    weight = 4
     url = "https://www.linkedin.com/in/jujinkim/"
-[[params.social]]
+  [[params.socialIcons]]
     name = "Instagram"
-    icon = "fa fa-instagram fa-2x"
-    weight = 5
     url = "https://www.instagram.com/jujin__kim/"
-[[params.social]]
+  [[params.socialIcons]]
     name = "Email"
-    icon = "fa fa-envelope fa-2x"
-    weight = 6
     url = "mailto:jujin@jujinkim.com"
 
-[menu]
-    [[menu.main]]
-        identifier = "posts"
-        name = "Posts"
-        url = "/post/"
-        weight = 1
-    [[menu.main]]
-        identifier = "about"
-        name = "About me"
-        url = "../me"
-        weight = 2
+[params.analytics.google]
+    SiteVerificationTag = "G-HMN7B5TG1B"
 
-[params.utterances]
-  repo = "jujinkim/web-jujinkim.com-comment" # https://utteranc.es/#heading-repository
-  issueTerm = "pathname" # https://utteranc.es/#heading-mapping
-  label = "comment" # https://utteranc.es/#heading-issue-label
-  theme = "preferred-color-scheme" # https://utteranc.es/#heading-theme
+[params.cover]
+  hidden = true
+  hiddenInList = true
+  hiddenInSingle = true
+
+[params.editPost]
+  URL = "https://github.com/jujinkim/hugo-jujinkim-com/content"
+  Text = "Suggest Changes"
+  appendFilePath = true
+
+[params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 0.4
+  minMatchCharLength = 0
+  limit = 10
+  keys = [ "title", "permalink", "summary", "content" ]
+
+[[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/post/"
+    weight = 10
+
+[[menu.main]]
+    identifier = "about"
+    name = "About me"
+    url = "../me/"
+    weight = 20
+
+[markup.highlight]
+    noClasses = false
