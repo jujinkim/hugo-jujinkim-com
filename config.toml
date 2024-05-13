@@ -38,6 +38,10 @@ pygmentsUseClasses = true
     showtoc = false
     tocopen = false
 
+[services]
+  [services.disqus]
+    shortname = 'kimbucha'
+
 [params.assets]
   favicon = "/img/favicon.svg"
   favicon16x16 = "/img/favicon-16x16.png"
