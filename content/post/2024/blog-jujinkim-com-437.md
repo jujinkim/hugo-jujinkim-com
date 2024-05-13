@@ -1,6 +1,6 @@
 ---
 title: "[Android] When using Snaphelper, let's manage onscrollistener well."
-date: 2024-05-14T01:42:47+09:00
+date: 2024-05-14T01:47:23+09:00
 draft: false
 ---
 
@@ -12,7 +12,7 @@ But many developers will use ScrollListener to RecyclerView. logging, or for man
 The problem is that ScrollListener is one external instance, if you need to manage memory, you need to remove it.  
 In this case, we often use `clearOnScrollListeners()` instead of `removeOnScrollListener()`, `SnapHelper`**In RecyclerView using recyclerView, call clearOnScrollListeners(), and the snap is broken.**
 
-The reason is that if you`re not a huge thing, you`ll see if you`re going to get the SnapHelper inside code, just because SnapHelper is in the recyclerView with flingListener and scrollListener. Since it is not managed separately, and it is managed just like other listeners, call the `clearOnScrollListeners() and the listener with SnapHelper is also called.
+The reason is that if you’re not a huge thing, you’ll see if you’re going to get the SnapHelper inside code, just because SnapHelper is in the recyclerView with flingListener and scrollListener. Since it is not managed separately, and it is managed just like other listeners, call the `clearOnScrollListeners() and the listener with SnapHelper is also called.
 
 About Us[SnapHelper.java](https://android.googlesource.com/platform/frameworks/support/+/oreo-cts-release/v7/recyclerview/src/android/support/v7/widget/SnapHelper.java)The code is part of.
 
@@ -45,10 +45,10 @@ private void setupCallbacks() throws IllegalStateException {
 ```
 Like the above code, call `attachToRecyclerView()` to recyclerView that is beyond the argument, and scrollListener inside Helper, and FlingListener.
 
-But we don`t call `addOnScrollListener()` separately and it`s easy to hit because it`s using SnapHelper.  
+But we don’t call `addOnScrollListener()` separately and it’s easy to hit because it’s using SnapHelper.  
 Therefore, when using SnapHelper, scrollListener and FlingListener must be managed directly with remove~~Listener, not clear~Listener. or sharpened.
 
-I don`t know this issue, it was a day that I feel again whenever I`m sleeping, I`m still cherished.
+I don’t know this issue, it was a day that I feel again whenever I’m sleeping, I’m still cherished.
 
 
 
