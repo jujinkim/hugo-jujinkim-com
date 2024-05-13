@@ -1,6 +1,6 @@
 ---
 title: "[Android] When using Snaphelper, let's manage onscrollistener well."
-date: 2024-05-14T01:01:52+09:00
+date: 2024-05-14T01:11:02+09:00
 draft: false
 ---
 
@@ -10,7 +10,7 @@ When you attach PagerSnapHelper to RecyclerView, you can automatically deploy th
 But many developers will use ScrollListener to RecyclerView. logging, or for many reasons that give effect when scrolling.
 
 The problem is that ScrollListener is one external instance, if you need to manage memory, you need to remove it.  
-In this case, we often use `clearOnScrollListeners()' instead of `removeOnScrollListener()', `SnapHelper`**In RecyclerView using recyclerView, call clearOnScrollListeners(), and the snap is broken.**
+In this case, we often use `clearOnScrollListeners()` instead of `removeOnScrollListener()`, `SnapHelper`**In RecyclerView using recyclerView, call clearOnScrollListeners(), and the snap is broken.**
 
 The reason is that if you’re not a huge thing, you’ll see if you’re going to get the SnapHelper inside code, just because SnapHelper is in the recyclerView with flingListener and scrollListener. Since it is not managed separately, and it is managed just like other listeners, call the `clearOnScrollListeners() and the listener with SnapHelper is also called.
 
