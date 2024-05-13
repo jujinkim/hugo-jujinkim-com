@@ -1,20 +1,20 @@
 ---
 title: "[Android] When using Snaphelper"
-date: 2024-05-13T00:13:40+09:00
+date: 2024-05-14T00:12:09+09:00
 draft: false
 ---
 
-`SnapHelper`About Us `RecyclerView`It is a convenient class that makes RecyclerView as ViewPager. `SnapHelper`It is an abstract class, and it is usually a `PagerSnapHelper`Use the real implementation class like.  
-`PagerSnapHelper`When scrolling to RecyclerView, the viewHolder automatically displays the most of the scrolling.
+`SnapHelper` is a convenient class that lets you create RecyclerView as ViewPager. SnapHelper is not a abstract class, and usually uses a real implemented class like ‘PagerSnapHelper’.  
+When you attach PagerSnapHelper to RecyclerView, you can automatically deploy the most viewHolder in the center of the scroll.
 
-RecyclerView `ScrollListener`We will use it. logging, or for many reasons that give effect when scrolling.
+But many developers will use ScrollListener to RecyclerView. logging, or for many reasons that give effect when scrolling.
 
 The problem is that ScrollListener is one external instance, if you need to manage memory, you need to remove it.  
-When we are often sleeping `removeOnScrollListener()`About Us `clearOnScrollListeners()`Use, **`SnapHelper`Using RecyclerView `clearOnScrollListeners()`When calling, the snap is broken.**
+In this case, we often use `clearOnScrollListeners()' instead of `removeOnScrollListener()', `SnapHelper`**In RecyclerView using recyclerView, call clearOnScrollListeners(), and the snap is broken.**
 
-That's why not `SnapHelper` If you’re looking for an internal code, you’ll see it. `SnapHelper`About Us `flingListener`About Us `scrollListener`About Us `RecyclerView`Because it is true. because it is not managed separately and is just managed as with other listeners, `clearOnScrollListeners()`When calling `SnapHelepr`You can also fly like a lion.
+The reason is that if you’re not a huge thing, you’ll see if you’re going to get the SnapHelper inside code, just because SnapHelper is in the recyclerView with flingListener and scrollListener. Since it is not managed separately, and it is managed just like other listeners, call the `clearOnScrollListeners() and the listener with SnapHelper is also called.
 
-About Us [`SnapHelper.java`](https://android.googlesource.com/platform/frameworks/support/+/oreo-cts-release/v7/recyclerview/src/android/support/v7/widget/SnapHelper.java) The code is part of.
+About Us[SnapHelper.java](https://android.googlesource.com/platform/frameworks/support/+/oreo-cts-release/v7/recyclerview/src/android/support/v7/widget/SnapHelper.java)The code is part of.
 
 
 ```
@@ -43,10 +43,10 @@ private void setupCallbacks() throws IllegalStateException {
     mRecyclerView.setOnFlingListener(this);
 }
 ```
-Like the code above, `attachToRecyclerView()`When calling the argument, it is beyond `RecyclerView`ScrollListener inside Helper, as well as FlingListener.
+Like the above code, call ‘attachToRecyclerView()’ to recyclerView that is beyond the argument, and scrollListener inside Helper, and FlingListener.
 
-But we're not `addOnScrollListener()`It’s not called, and it’s easy to use SnapHelper.  
-About Us `SnapHelper`ScrollListener `clear~~Listener`About Us `remove~~Listener` We will do our best for you. or be wary and rejuvenated.
+But we don’t call ‘addOnScrollListener()’ separately and it’s easy to hit because it’s using SnapHelper.  
+Therefore, when using SnapHelper, scrollListener and FlingListener must be managed directly with remove~~Listener, not clear~Listener. or sharpened.
 
 I don’t know this issue, it was a day that I feel again whenever I’m sleeping, I’m still cherished.
 
