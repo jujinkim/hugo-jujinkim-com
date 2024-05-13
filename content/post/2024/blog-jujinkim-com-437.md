@@ -1,6 +1,6 @@
 ---
-title: "[Android] When using Snaphelper"
-date: 2024-05-14T00:22:51+09:00
+title: ""[Android] When using Snaphelper, let's manage onscrollistener well.""
+date: 2024-05-14T00:39:41+09:00
 draft: false
 ---
 
