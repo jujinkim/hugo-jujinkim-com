@@ -40,7 +40,7 @@ pygmentsUseClasses = true
 
 [services]
   [services.disqus]
-    shortname = 'kimbucha'
+    shortname = 'jujinkim'
 
 [params.assets]
   favicon = "/img/favicon.svg"
