@@ -14,3 +14,7 @@ googleAnalytics = "G-HMN7B5TG1B"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+  
+[services]
+  [services.disqus]
+    shortname = 'jujinkim'
