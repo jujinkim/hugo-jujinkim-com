@@ -1,7 +1,7 @@
 baseURL = "https://jujinkim.com/"
 title = "Jujin Kim's"
 paginate = 5
-theme = "hugo-PaperMod"
+theme = "congo"
 enableInlineShortCodes = true
 enableRobotsTXT = true
 buildDrafts = false
