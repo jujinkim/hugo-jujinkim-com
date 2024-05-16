@@ -20,7 +20,7 @@ pygmentsUseClasses = true
     description = "Jujin's personal website"
     keywords = [ "Blog", "Jujin", "Programming", "Develop" ]
     author = "Jujin Kim"
-    images = [ "<link or path of image for opengraph, twitter-cards>" ]
+    images = [ "https://www.gravatar.com/avatar/e6c8e03b582618d7991167c68b0f0926?s=240&d=mp" ]
     DateFormat = "January 2, 2006"
     defaultTheme = "auto"
     disableThemeToggle = false
