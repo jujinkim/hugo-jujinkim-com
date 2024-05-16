@@ -2,10 +2,12 @@ baseURL = "https://jujinkim.com/"
 title = "Jujin Kim's"
 paginate = 5
 theme = "hugo-PaperMod"
+enableInlineShortCodes = true
 enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
 buildExpired = false
+enableEmoji = true
 pygmentsUseClasses = true
 
 [minify]
