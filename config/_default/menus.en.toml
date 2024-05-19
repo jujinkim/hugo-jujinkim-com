@@ -21,7 +21,7 @@
 
 [[main]]
   name = "About Me"
-  url = "me"
+  url = "/me"
   weight = 11
 
 [[main]]
