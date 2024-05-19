@@ -6,7 +6,7 @@ function initialize() {
     loadSlot(document.getElementById('exp'));
     loadSlot(document.getElementById('link'));
 
-    setThemeByTime();
+    setTheme();
 }
 
 function loadSlot(elem) {
@@ -48,7 +48,7 @@ function loadSlot(elem) {
     xhttp.send();
 }
 
-function setThemeByTime() {
+function setTheme() {
     const hour = new Date().getHours();
     let themeName;
 
@@ -57,13 +57,28 @@ function setThemeByTime() {
         themeName = "rosegold";
     }
     else {
-        if (hour >= 7 && hour <= 19) {
-            // Day, Light
-            themeName = "light";
-        } else {
-            // Night, Dark
-            themeName = "dark";
-        }
+        try {
+            // Try to get theme from user's preference
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                themeName = "dark";
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                themeName = "light";
+            } else {
+                throw new Error("Unable to read user's preferred theme");
+            }
+            console.log(`Set ${themeName} theme by user's preference`);
+
+        } catch (e) {
+            // Fail to get theme from user's preference, set theme based on time
+            if (hour >= 7 && hour <= 19) {
+                // Day, Light
+                themeName = "light";
+            } else {
+                // Night, Dark
+                themeName = "dark";
+            }
+            console.log(`Set ${themeName} theme by time`);
+        }   
     }
 
     document.body.classList.add(themeName);
