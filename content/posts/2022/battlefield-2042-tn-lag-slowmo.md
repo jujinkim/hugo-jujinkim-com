@@ -2,6 +2,7 @@
 title: "Solutions to fix BattleField 2042 bugs that make unable to play"
 date: 2022-12-21T14:01:12+09:00
 draft: false
+tags: ["Gaming", "Battlefield 2042", "Troubleshooting"]
 ---
 
 Recently I noticed that there were some bugs and glitches in BattleField 2042, and these make the game unable to be played.

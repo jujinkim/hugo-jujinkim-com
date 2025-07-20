@@ -2,6 +2,7 @@
 title: "[Android] When using Snaphelper, let's manage onscrollistener well."
 date: 2024-05-14T01:47:23+09:00
 draft: false
+tags: ["Android", "RecyclerView", "SnapHelper", "Kotlin"]
 ---
 
 `SnapHelper` is a convenient class that lets you create RecyclerView as ViewPager. SnapHelper is not a abstract class, and usually uses a real implemented class like `PagerSnapHelper`.  

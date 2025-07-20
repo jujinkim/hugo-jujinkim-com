@@ -2,6 +2,7 @@
 title: "DI(의존성 주입)란 무엇일까?"
 date: 2020-10-18T01:12:39+09:00
 draft: false
+tags: ["DI", "Dependency Injection", "Architecture", "Android", "Korean"]
 ---
 &nbsp;이 글은 Dagger2를 공부하기에 앞서 DI(의존성 주입)라는게 무엇인지 도저히 모르겠는 분들을 위한(나를 위한) 글입니다.
 
