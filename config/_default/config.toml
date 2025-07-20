@@ -1,20 +1,80 @@
-# -- Site Configuration --
-# Refer to the theme docs for more details about each of these parameters.
-# https://jpanther.github.io/congo/docs/getting-started/
-
-# baseURL = "https://jujinkim.com/"
-theme = "congo"
-defaultContentLanguage = "en"
-
+baseURL = "https://jujinkim.com"
+disqusShortname = ""
+enableGitInfo = true
 enableRobotsTXT = true
-paginate = 10
-summaryLength = 0
+hasCJKLanguage = true
+languageCode = "en"
+rssLimit = 10
+theme = "hugo-texify3"
+title = "JujinKim.com"
 
-googleAnalytics = "G-HMN7B5TG1B"
+[pagination]
+pagerSize = 5
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-  
-[services]
-  [services.disqus]
-    shortname = 'jujinkim'
+[taxonomies]
+tags = "tags"
+categories = "categories"
+
+[params]
+title="JujinKim.com"
+author = "Jujin Kim"
+description = "TeXify3 - A LaTeX-style hugo theme with the gruvbox color scheme for personal blogging"
+footnote = """
+Powered by  <a class=link href=https://gohugo.io target=_blank rel=noopener>Hugo</a> | 
+Theme <a class=link href=https://github.com/michaelneuper/hugo-texify3 target=_blank rel=noopener>TeXify3</a>
+"""
+customCSS = []
+customJS = []
+dateFormat = "2 January 2006"
+emphasisWithDots = true
+toc = true
+rootFontSize = "105%"
+math = true
+enableDuckDuckGoSearchBox = true
+numberedSubtitles = true
+
+  [params.commentEngine]
+  code = """
+  <script src="https://giscus.app/client.js"
+        data-repo="jujinkim/WrittoRatto"
+        data-repo-id="R_kgDOIjPNaQ"
+        data-category="General"
+        data-category-id="DIC_kwDOIjPNac4CaklA"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="gruvbox"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+  </script>
+  """
+
+  [params.buymeacoffee]
+  code = """
+  <script async data-name="BMC-Widget" 
+        data-cfasync="true" 
+        src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
+        data-id="jujin" 
+        data-description="Like what I do? Buy me a coffee!" 
+        data-message="" 
+        data-color="#d79921" 
+        data-position="Right" 
+        data-x_margin="18" 
+        data-y_margin="18"
+        crossorigin="anonymous">
+  </script>
+  """
+
+  [params.sharingbuttons]
+  facebook = false
+  twitter = false
+  email = true
+  linkedin = true
+  reddit = true
+  whatsapp = false
+  hackernews = true
+  telegram = true
