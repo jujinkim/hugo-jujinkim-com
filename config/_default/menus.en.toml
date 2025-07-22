@@ -4,21 +4,25 @@
 # Optional: pre parameter for SVG icons
 
 [[main]]
-  name = "▪ Blog"
+  pre = '<i class="fas fa-blog"></i>'
+  name = "Blog"
   pageRef = "posts"
   weight = 10
 
 [[main]]
-  name = "◆ Tags"
+  pre = '<i class="fas fa-tags"></i>'
+  name = "Tags"
   pageRef = "tags"
   weight = 20
 
 [[main]]
-  name = "● About"
+  pre = '<i class="fas fa-user"></i>'
+  name = "About"
   url = "/about/"
   weight = 30
 
 [[main]]
-  name = "▶ GitHub"
+  pre = '<i class="fab fa-github"></i>'
+  name = "GitHub"
   url = "https://github.com/jujinkim"
   weight = 40

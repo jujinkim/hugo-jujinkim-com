@@ -1,6 +1,7 @@
 ---
 title: "About Me"
 date: 2024-07-21
+numberedSubtitles: false
 ---
 
 <div style="text-align: center; margin-bottom: 2em;">

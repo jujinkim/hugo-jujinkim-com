@@ -1,7 +1,7 @@
 ## Hello, I'm Jujin Kim 👋
 
 <p style="font-size: 1.2em; color: #665c54; margin: 1.5em 0;">
-Software Engineer at Samsung Electronics · Android Developer · Tech Enthusiast
+Software Engineer · Android App Developer · Tech Enthusiast
 </p>
 
 <blockquote style="font-style: italic; border-left: 4px solid #d79921; padding-left: 1em; margin: 2em 0;">
