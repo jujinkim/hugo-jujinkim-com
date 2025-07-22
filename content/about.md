@@ -8,7 +8,7 @@ numberedSubtitles: false
     <img src="/meeeeee.png" alt="Jujin Kim" style="width: 180px; height: 180px; border-radius: 50%; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 </div>
 
-## Jujin Kim
+<h2 style="text-align: center;">Jujin Kim</h2>
 
 <div style="text-align: center; margin-bottom: 2em;">
     <em>Software Engineer · Application Developer</em>
