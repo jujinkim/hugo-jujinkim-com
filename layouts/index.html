@@ -1,0 +1,29 @@
+{{ define "head" }}
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{{ end }}
+
+{{ define "main" }}
+<main id="home">
+  <div id="about">
+    {{ .Content }}
+  </div>
+
+  <div id="writings">
+    <div class="section-title">Recent Posts</div>
+    <ul class="posts">
+      {{ $posts := where site.RegularPages "Type" "posts" }}
+      {{ range first 5 $posts }}
+      <li class="post">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="date">{{ dateFormat .Site.Params.dateFormat .Date }}</span>
+      </li>
+      {{ end }}
+    </ul>
+
+    {{ if gt (len $posts) 5 }}
+    <a class="see-more" href="/posts">View all posts →</a>
+    {{ end }}
+  </div>
+</main>
+{{ end }}
