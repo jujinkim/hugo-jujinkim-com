@@ -1,0 +1,63 @@
+/* Better colors for dark theme */
+body.darkmode {
+    /* Improve link colors - brighter blue for better contrast */
+    --aqua: #8ec07c;
+    --blue: #83a598;
+}
+
+/* Links in dark mode */
+body.darkmode a.link,
+body.darkmode .link {
+    color: #83a598;
+}
+
+body.darkmode a.link:hover,
+body.darkmode .link:hover {
+    color: #8ec07c;
+}
+
+/* Secondary text (dates, metadata) */
+body.darkmode .date,
+body.darkmode .publish-metadata,
+body.darkmode .section-title {
+    color: #bdae93; /* Brighter than default fg4 */
+}
+
+/* Navigation items */
+body.darkmode .nav-bar-item a {
+    color: #d5c4a1;
+}
+
+body.darkmode .nav-bar-item a:hover {
+    color: #fbf1c7;
+}
+
+/* Post list items */
+body.darkmode .posts .post .date {
+    color: #a89984;
+}
+
+/* Improve blockquote text */
+body.darkmode blockquote {
+    color: #d5c4a1;
+}
+
+/* Tags */
+body.darkmode .tag {
+    background-color: #3c3836;
+    color: #8ec07c;
+}
+
+body.darkmode .tag:hover {
+    background-color: #504945;
+    color: #b8bb26;
+}
+
+/* See more link */
+body.darkmode .see-more {
+    color: #83a598;
+}
+
+body.darkmode .see-more:hover {
+    color: #8ec07c;
+}
