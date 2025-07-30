@@ -6,38 +6,38 @@
 .content blockquote,
 .content td,
 .content th {
-    line-height: 1.9;
+    line-height: 2.1;
 }
 
 /* Main page content */
 .home article p,
 .home article li {
-    line-height: 1.9;
+    line-height: 2.1;
 }
 
 /* Single page content (posts, about, etc.) */
 .single article p,
 .single article li,
 .single article blockquote {
-    line-height: 1.9;
+    line-height: 2.1;
 }
 
 /* List pages (blog, tags) */
 .list .post-entry p,
 .list .post-summary {
-    line-height: 1.8;
+    line-height: 2.0;
 }
 
 /* Also improve spacing between paragraphs */
 .content p,
 .home article p,
 .single article p {
-    margin-bottom: 1.3em;
+    margin-bottom: 1.5em;
 }
 
 /* Add spacing between list items */
 .content li {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.7em;
 }
 
 /* Better spacing for headings */
@@ -47,6 +47,6 @@
 .content h4,
 .content h5,
 .content h6 {
-    margin-top: 1.5em;
-    margin-bottom: 0.8em;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
