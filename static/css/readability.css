@@ -1,20 +1,52 @@
 /* Increase line-height for better readability */
 
+/* Global content line height */
+.content p,
+.content li,
+.content blockquote,
+.content td,
+.content th {
+    line-height: 1.9;
+}
+
 /* Main page content */
 .home article p,
 .home article li {
-    line-height: 1.8;
+    line-height: 1.9;
 }
 
-/* About page content */
+/* Single page content (posts, about, etc.) */
 .single article p,
 .single article li,
 .single article blockquote {
+    line-height: 1.9;
+}
+
+/* List pages (blog, tags) */
+.list .post-entry p,
+.list .post-summary {
     line-height: 1.8;
 }
 
 /* Also improve spacing between paragraphs */
+.content p,
 .home article p,
 .single article p {
-    margin-bottom: 1.2em;
+    margin-bottom: 1.3em;
+}
+
+/* Add spacing between list items */
+.content li {
+    margin-bottom: 0.5em;
+}
+
+/* Better spacing for headings */
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
 }
